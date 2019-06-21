@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="can"></canvas>
+
+<script>
+    (() => {
+        let img = new Image();
+        const header = 'data:image/jpg;base64,';
+        img.src = header + '';
+        let can = document.getElementById('can');
+        let ctx = can.getContext('2d');
+        img.onload = () => {
+            can.width = img.width;
+            can.height = img.height;
+
+            ctx.drawImage(img, 0, 0);
+        };
+    })();
+</script>
+</body>
+</html>

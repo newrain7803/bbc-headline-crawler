@@ -15,7 +15,7 @@ const ELE_TEXT = 'text';
 const ELE_UL = 'ul';
 const IMG_PRESENTATIONAL_ALT = /[Pp]resentational [wg].+/;
 const IMG_RES = /news\/[^\/]+\//;
-const IMG_RES_640 = 'news/640/';
+const IMG_RES_960 = 'news/960/';
 const NOT_BLANK = /^[\S\s]*\S+[\S\s]*$/;
 let news = {};
 
@@ -266,7 +266,7 @@ const handleUnprocessedMedia = e => {
 };
 
 const imgResReplace = s => {
-    return s.replace(IMG_RES, IMG_RES_640);
+    return s.replace(IMG_RES, IMG_RES_960);
 };
 
 const imgToBase64 = async u => {
