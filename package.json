@@ -2,7 +2,7 @@
   "name": "bbc-crawler",
   "version": "1.0.0",
   "description": "",
-  "main": "entrypoint.js",
+  "main": "entry.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

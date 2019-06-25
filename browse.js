@@ -1,5 +1,4 @@
 const $ = require('cheerio');
-const request = require('request');
 const rp = require('request-promise');
 const BASE_URL = "https://www.bbc.com";
 const CROSS_REGION = /http.*/;
@@ -280,9 +279,10 @@ const imgToBase64 = async u => {
     });
 };
 
-(async () => {
-    let a = await browse('https://www.bbc.com/news/entertainment-arts-48635450');
-    console.log(a);
-})();
+// (async () => {
+//     let a = await browse('https://www.bbc.com/news/world-africa-48743081');
+//     console.log(a);
+// })();
 
 module.exports = browse;
+module.exports = imgToBase64;
